@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fotos and Prints Photobooth</title>
+<meta name="description" content="A modern photobooth studio for weddings, parties, and brand activations.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="spotlight" id="spotlight"></div>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a href="#" class="logo">Fotos and Prints<span>.</span></a>
+    <nav class="nav-links" id="navLinks">
+      <a href="#work">Work</a>
+      <a href="#about">About</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#book" class="nav-cta">Book now</a>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-glow" aria-hidden="true"></div>
+  <div class="wrap hero-inner">
+    <div class="hero-copy">
+      <p class="eyebrow">Photobooth studio — [Your City]</p>
+      <h1><span class="text-flash">SNAP. SMILE. SHARE.</span></h1>
+      <p class="hero-sub">Make Every Moment a Treasure to Keep!<br>Whether it’s a wedding, birthday, corporate event, or just a reason to party—our photo booth brings the fun to YOU!</br></p>
+      <div class="hero-actions">
+        <a href="#book" class="btn btn-flash">Check your date →</a>
+        <a href="#work" class="btn btn-ghost">See the shots</a>
+      </div>
+      <div class="hero-trust">
+        <span>[120+] events</span>
+        <span class="dot">•</span>
+        <span>[40k+] strips printed</span>
+        <span class="dot">•</span>
+        <span>★ [4.9] rating</span>
+      </div>
+    </div>
+
+    <div class="polaroid-stack" aria-hidden="true">
+      <div class="polaroid p1">
+        <div class="photo"><img src="images/hero/flash-1.jpg" alt="" loading="eager"></div>
+      </div>
+      <div class="polaroid p2">
+        <div class="photo"><img src="images/hero/flash-2.jpg" alt="" loading="eager"></div>
+      </div>
+      <div class="polaroid p3">
+        <div class="photo"><img src="images/hero/flash-3.jpg" alt="" loading="eager"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="marquee">
+  <div class="marquee-track">
+    <span>WEDDINGS ✺ PARTIES ✺ CORPORATE EVENTS ✺ BRAND ACTIVATIONS ✺ WEDDINGS ✺ PARTIES ✺ CORPORATE EVENTS ✺ BRAND ACTIVATIONS ✺</span>
+    <span>WEDDINGS ✺ PARTIES ✺ CORPORATE EVENTS ✺ BRAND ACTIVATIONS ✺ WEDDINGS ✺ PARTIES ✺ CORPORATE EVENTS ✺ BRAND ACTIVATIONS ✺</span>
+  </div>
+</div>
+
+<section class="gallery" id="work">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div>
+        <p class="eyebrow eyebrow-dark">Recent bookings</p>
+        <h2>Fresh off the printer</h2>
+      </div>
+      <p class="section-sub">A running wall of the weddings, parties, and activations we've shown up for. Filter by what you're picturing.</p>
+    </div>
+
+    <div class="filter-tabs">
+      <button class="filter-tab active" data-filter="all">All</button>
+      <button class="filter-tab" data-filter="weddings">Weddings</button>
+      <button class="filter-tab" data-filter="parties">Parties</button>
+      <button class="filter-tab" data-filter="corporate">Corporate</button>
+      <button class="filter-tab" data-filter="debut">Debut</button>
+    </div>
+
+    <!-- Each card loads an image from /images/gallery/. To add a new photo:
+         1. Drop the file into images/gallery/ (e.g. wedding-4.jpg)
+         2. Copy one .gallery-card block below and update the src, alt, tag, date -->
+    <div class="gallery-grid" id="galleryGrid">
+      <div class="gallery-card reveal" data-category="weddings">
+        <div class="photo"><img src="images/gallery/wedding-1.jpg" alt="Wedding photobooth guests" loading="lazy"></div>
+        <div class="card-meta"><span class="tag">Wedding</span><span>Jun 2026</span></div>
+      </div>
+      <div class="gallery-card reveal" data-category="corporate">
+        <div class="photo"><img src="images/gallery/corporate-1.jpg" alt="Corporate brand activation photobooth" loading="lazy"></div>
+        <div class="card-meta"><span class="tag">Corporate</span><span>May 2026</span></div>
+      </div>
+      <div class="gallery-card reveal" data-category="corporate">
+        <div class="photo"><img src="images/gallery/corporate-2.jpg" alt="Product launch photobooth" loading="lazy"></div>
+        <div class="card-meta"><span class="tag">Corporate</span><span>Mar 2026</span></div>
+      </div>
+      <div class="gallery-card reveal" data-category="corporate">
+        <div class="photo"><img src="images/gallery/corporate-3.jpg" alt="Holiday office party photobooth" loading="lazy"></div>
+        <div class="card-meta"><span class="tag">Corporate</span><span>Dec 2025</span></div>
+      </div>
+      <div class="gallery-card reveal" data-category="parties">
+        <div class="photo"><img src="images/gallery/party-1.jpg" alt="Birthday party photobooth guests" loading="lazy"></div>
+        <div class="card-meta"><span class="tag">Birthday</span><span>May 2026</span></div>
+      </div>
+      <div class="gallery-card reveal" data-category="parties">
+        <div class="photo"><img src="images/gallery/party-2.jpg" alt="Anniversary party photobooth guests" loading="lazy"></div>
+        <div class="card-meta"><span class="tag">Anniversary</span><span>Apr 2026</span></div>
+      </div>
+      <div class="gallery-card reveal" data-category="parties">
+        <div class="photo"><img src="images/gallery/party-3.jpg" alt="Graduation party photobooth guests" loading="lazy"></div>
+        <div class="card-meta"><span class="tag">Graduation</span><span>Mar 2026</span></div>
+      </div>
+      <div class="gallery-card reveal" data-category="parties">
+        <div class="photo"><img src="images/gallery/party-4.jpg" alt="Wedding photobooth guests" loading="lazy"></div>
+        <div class="card-meta"><span class="tag">Wedding</span><span>Apr 2026</span></div>
+      </div>
+      <div class="gallery-card reveal" data-category="parties">
+        <div class="photo"><img src="images/gallery/party-5.jpg" alt="Wedding photobooth guests" loading="lazy"></div>
+        <div class="card-meta"><span class="tag">Wedding</span><span>Feb 2026</span></div>
+      </div>
+      <div class="gallery-card reveal" data-category="parties">
+        <div class="photo"><img src="images/gallery/party-6.jpg" alt="Wedding photobooth guests" loading="lazy"></div>
+        <div class="card-meta"><span class="tag">Wedding</span><span>Feb 2026</span></div>
+      </div>
+      <div class="gallery-card reveal" data-category="parties">
+        <div class="photo"><img src="images/gallery/party-7.jpg" alt="Wedding photobooth guests" loading="lazy"></div>
+        <div class="card-meta"><span class="tag">Wedding</span><span>Feb 2026</span></div>
+      </div>
+      <div class="gallery-card reveal" data-category="parties">
+        <div class="photo"><img src="images/gallery/party-8.jpg" alt="Wedding photobooth guests" loading="lazy"></div>
+        <div class="card-meta"><span class="tag">Wedding</span><span>Feb 2026</span></div>
+      </div>
+      <div class="gallery-card reveal" data-category="parties">
+        <div class="photo"><img src="images/gallery/party-9.jpg" alt="Wedding photobooth guests" loading="lazy"></div>
+        <div class="card-meta"><span class="tag">Wedding</span><span>Feb 2026</span></div>
+      </div>
+      <div class="gallery-card reveal" data-category="parties">
+        <div class="photo"><img src="images/gallery/party-10.jpg" alt="Wedding photobooth guests" loading="lazy"></div>
+        <div class="card-meta"><span class="tag">Wedding</span><span>Feb 2026</span></div>
+      </div>
+      <div class="gallery-card reveal" data-category="parties">
+        <div class="photo"><img src="images/gallery/party-11.jpg" alt="Wedding photobooth guests" loading="lazy"></div>
+        <div class="card-meta"><span class="tag">Wedding</span><span>Feb 2026</span></div>
+      </div>
+      <div class="gallery-card reveal" data-category="parties">
+        <div class="photo"><img src="images/gallery/party-12.jpg" alt="Wedding photobooth guests" loading="lazy"></div>
+        <div class="card-meta"><span class="tag">Wedding</span><span>Feb 2026</span></div>
+      </div>
+      <div class="gallery-card reveal" data-category="parties">
+        <div class="photo"><img src="images/gallery/party-13.jpg" alt="Wedding photobooth guests" loading="lazy"></div>
+        <div class="card-meta"><span class="tag">Wedding</span><span>Feb 2026</span></div>
+      </div>
+      <div class="gallery-card reveal" data-category="parties">
+        <div class="photo"><img src="images/gallery/party-14.jpg" alt="Wedding photobooth guests" loading="lazy"></div>
+        <div class="card-meta"><span class="tag">Wedding</span><span>Feb 2026</span></div>
+      </div>
+      <div class="gallery-card reveal" data-category="debut">
+        <div class="photo"><img src="images/gallery/debut-1.jpg" alt="Wedding photobooth guests" loading="lazy"></div>
+        <div class="card-meta"><span class="tag">Wedding</span><span>Feb 2026</span></div>
+      </div>
+      <div class="gallery-card reveal" data-category="debut">
+        <div class="photo"><img src="images/gallery/debut-2.jpg" alt="Wedding photobooth guests" loading="lazy"></div>
+        <div class="card-meta"><span class="tag">Wedding</span><span>Feb 2026</span></div>
+      </div>
+    </div>
+    <!-- <p class="gallery-note">Placeholder photos shown above — replace the files in <code>images/gallery/</code> with real customer shots (with their okay) to bring this wall to life.</p> -->
+  </div>
+</section>
+
+<section class="about" id="about">
+  <div class="wrap about-inner">
+    <div class="about-copy reveal">
+      <p class="eyebrow">The studio</p>
+      <h2>Started with one booth<br>and a borrowed van.</h2>
+      <p>Strip. began as a side project for a friend's wedding — the booth corner became the busiest one in the room. We've carried it to weddings, work parties, and product launches ever since, always chasing the same thing: give people a reason to be a little silly on camera.</p>
+      <a href="#book" class="btn btn-flash">Start planning →</a>
+    </div>
+    <div class="stat-block reveal">
+      <div class="stat-big">
+        <strong>120<span class="text-flash">+</span></strong>
+        <span>events covered, every kind of chaos</span>
+      </div>
+      <div class="mini-quote">
+        "They ran the corner all night and somehow got my grandmother into three strips."
+        <cite>— [Client name], Wedding [Year]</cite>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="pricing" id="pricing">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div>
+        <p class="eyebrow eyebrow-dark">Packages</p>
+        <h2>Pick your roll</h2>
+      </div>
+      <p class="section-sub">Every package includes an attendant, unlimited prints, and a digital gallery. Customize props and backdrops on request.</p>
+    </div>
+    <div class="pricing-grid">
+      <div class="price-card reveal">
+        <p class="price-label">Essentials</p>
+        <h3>₱[XX,XXX]</h3>
+        <p class="price-unit">up to 3 hours</p>
+        <ul>
+          <li>Open-air booth, one attendant</li>
+          <li>Unlimited prints, classic strip</li>
+          <li>Basic prop set</li>
+          <li>Gallery within 48 hours</li>
+        </ul>
+        <a href="#book" class="btn btn-outline">Choose this</a>
+      </div>
+      <div class="price-card featured reveal">
+        <p class="price-badge">Most booked</p>
+        <p class="price-label">Full Roll</p>
+        <h3>₱[XX,XXX]</h3>
+        <p class="price-unit">up to 5 hours</p>
+        <ul>
+          <li>Everything in Essentials</li>
+          <li>Custom strip design, names + date</li>
+          <li>Guest book add-on included</li>
+          <li>Full prop styling</li>
+          <li>Same-day sneak peek gallery</li>
+        </ul>
+        <a href="#book" class="btn btn-flash">Choose this</a>
+      </div>
+      <div class="price-card reveal">
+        <p class="price-label">Director's Cut</p>
+        <h3>Custom</h3>
+        <p class="price-unit">scoped to your event</p>
+        <ul>
+          <li>Everything in Full Roll</li>
+          <li>Branded overlays / logo strips</li>
+          <li>Multiple booths &amp; locations</li>
+          <li>Dedicated event producer</li>
+        </ul>
+        <a href="#book" class="btn btn-outline">Talk to us</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="booking" id="book">
+  <div class="wrap booking-inner">
+    <div class="booking-copy reveal">
+      <p class="eyebrow">Get in touch</p>
+      <h2>Check your date</h2>
+      <p>Tell us about your event and we'll follow up within a day with availability and a quote.</p>
+      <div class="contact-line">
+        <span>[hello@yourstudio.com]</span>
+        <span>[+63 XXX XXX XXXX]</span>
+        <span>[@yourstudio] on Instagram</span>
+      </div>
+    </div>
+
+    <!-- No backend wired up yet — connect this form to a service like Formspree,
+         or your own API endpoint, before you rely on it to receive bookings. -->
+    <form class="booking-form reveal" id="bookingForm">
+      <div class="field">
+        <label for="name">Name</label>
+        <input id="name" type="text" placeholder="Your full name" required>
+      </div>
+      <div class="field">
+        <label for="email">Email</label>
+        <input id="email" type="email" placeholder="you@email.com" required>
+      </div>
+      <div class="field">
+        <label for="date">Event date</label>
+        <input id="date" type="date">
+      </div>
+      <div class="field">
+        <label for="type">Event type</label>
+        <select id="type">
+          <option>Wedding</option>
+          <option>Birthday / party</option>
+          <option>Corporate</option>
+          <option>Other</option>
+        </select>
+      </div>
+      <div class="field full">
+        <label for="message">Tell us about it</label>
+        <textarea id="message" placeholder="Guest count, venue, time of day — whatever you've got so far."></textarea>
+      </div>
+      <div class="field full">
+        <button type="submit" class="btn btn-flash">Send inquiry</button>
+        <p class="form-status" id="formStatus"></p>
+      </div>
+    </form>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <a href="#" class="logo">Strip<span>.</span></a>
+    <div class="footer-links">
+      <a href="#work">Work</a>
+      <a href="#about">About</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#book">Book</a>
+    </div>
+  </div>
+  <div class="wrap footer-fine">© [Year] Strip. Photobooth Studio. All rights reserved.</div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
