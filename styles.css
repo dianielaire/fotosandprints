@@ -345,7 +345,7 @@ section{ padding: 96px 0; position: relative; z-index: 2; }
 .section-head h2{ font-size: clamp(30px, 3.6vw, 46px); }
 
 .section-sub{
-  max-width: 380px;
+  max-width: 420px;
   font-size: 15px;
 }
 
