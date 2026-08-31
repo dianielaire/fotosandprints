@@ -294,6 +294,18 @@ h1, h2, h3{
   object-fit: cover;
 }
 
+/* Polaroid on package */
+.polaroid-pack{
+  /* position:absolute; */
+  width: 230px;
+  background: var(--paper);
+  /* padding: 12px 12px; */
+  border-radius: 6px;
+  /* box-shadow: 0 30px 50px -20px rgba(0,0,0,0.55); */
+  transition: transform .35s ease;
+}
+
+
 /* ==========================================================================
    Marquee ribbon
    ========================================================================== */
